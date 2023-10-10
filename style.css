@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 1;
+    font-size: 120%;
+    font: inherit;
+    vertical-align: baseline;
+}
+body{
+    font-size: 120%;
+    color: #85899D; 
+}
+p{
+    margin-bottom: 20px;
+}
+p:last-child{
+    margin-bottom: 0;
+}
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.breadcrumps{
+    margin-bottom: 20px;
+    color: #009fe3;
+}
+.site-header{
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+}
+.site-header__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: inherit;
+    padding: 38px 0;
+}
+.site-header__logo{
+    width: max-content;
+}
+.site-header__logo img {
+    width: 49%;
+}
+.site-header-top{
+    width: 900px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+.site-header__link{
+    text-decoration: none;
+    transition: 0.5s;
+    margin-right: 30px;
+    color: #85899D;
+}
+.site-main__banner{
+    width: 100%;
+    height: 583px;
+    background: url("img/slide.jpg");
+    background-size: cover;
+}
+.site-header__menu{
+    height: 50px;
+    width: 100%;
+    border-top: 1px solid rgba(52, 52, 51, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+.site-header__lang{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.site-header-info{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 20px 0;
+}
+.menu-header__link{
+    text-decoration: none;
+    color: #85899D;
+    transition: 0.5s;
+}
+.lang__link{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #85899D;
+}
+.--current{
+    color: #009fe3;
+}
+.site-main__content{
+    margin: 20px 0;
+}
+.site__footer{
+    background-color: #6a2a70;
+}
+.site-header-search button{
+    padding: 0;
+    width: auto;
+    height: 34px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+.search-input{
+    border: none;
+    padding: 0 15px !important;
+    font-size: 20px !important;
+    font-weight: 500;
+}
+.site-main__info{
+    text-align: justify;
+    font-size: 120%;
+    margin-top: 20px;
+}
+.site-main__section{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.section__elem{
+    width: 425px;
+    height: 250px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 0.5s;
+}
+.section-elem--organisation{
+    background: url("img/section1.jpg");
+    background-size: 100%;
+    background-position-x: 45%;
+    background-position-y: 45%;
+}
+.section-elem--photo{
+    background: url("img/section2.jpg");
+    background-size: 100%;
+    background-position-x: 45%;
+    background-position-y: 45%;
+}
+.section-elem--video{
+    background: url("img/section3.jpg");
+    background-size: 100%;
+    background-position-x: 45%;
+    background-position-y: 45%;
+}
+.section-elem__button{
+    width: 100%;
+}
+.section-elem__link{
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 3px solid #fff;
+    padding: 10px 25px;
+    display: block;
+    text-align: center;
+    transition: 0.5s;
+    color: #fff;
+}
+.section-elem__title{
+    font-size: 27px;
+    font-weight: bold;
+    color: #fff;
+}
+.site-footer .container{
+    height: auto;
+}
+.site-footer__copyright{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 25px 0;
+    color: #fff;
+}
+@media screen {
+    .section-elem__link:hover{
+        background-color: #fff;
+        color: #000;
+        border-color: #fff;
+    }
+    .site-header__link:hover,
+    .menu-header__link:hover{
+        color: #009fe3;
+    }
+    .section-elem--blue:hover{
+        box-shadow: 0 0 20px #009fe3;
+    }
+    .section-elem--green:hover{
+        box-shadow: 0 0 20px #98D04C;
+    }
+    .section-elem--purpule:hover{
+        box-shadow: 0 0 20px #662D91;
+    }
+    .section-elem--organisation:hover,
+    .section-elem--photo:hover,
+    .section-elem--video:hover{
+        background-size: 120%;
+    }
+}
