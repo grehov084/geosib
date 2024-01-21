@@ -12,8 +12,8 @@
                 <div class="site-header__logo">
                     <a href="#">
                         <picture>
-                            <source srcset="img/header_logo_RU1.png" media="(min-width: 1240px)">
-                            <img src="img/header_logo_RU1.png" alt="logo">
+                            <source srcset="img/header_logo_RU1.png" media="(min-width: 1024px)">
+                            <img src="img/logo-mob.svg" alt="logo">
                         </picture>
                     </a>
                 </div>
@@ -29,7 +29,7 @@
                                 <input class="search-input" type="text" id="header-search" name="q" placeholder="Поиск" value="" size="5" maxlength="50">
                             </label>
                         </div>
-                        <div class="site-header__lang lang">
+                        <div class="site-header-lang lang">
                             <div class="lang__item"><a href="" class="lang__link --current">Ru</a></div>
                             <div class="lang__item"><a href="" class="lang__link">En</a></div>
                         </div> 
@@ -40,6 +40,27 @@
                         <div class="menu-header__item"><a href="" class="menu-header__link">Выставка</a></div>
                         <div class="menu-header__item"><a href="" class="menu-header__link">Партнеры</a></div>
                         <div class="menu-header__item"><a href="" class="menu-header__link">Регистрация</a></div>
+                    </div>
+                </div>
+                <div class="site-header-mobile">
+                    <div class="site-header-mobile-top">
+                        <div class="site-header-search">
+                            <button class="site-header-search__button" type="submit"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.206 12.617L14.296 15.703C14.686 16.099 15.316 16.099 15.706 15.703C16.098 15.308 16.098 14.669 15.706 14.273L12.626 11.193C13.496 10.025 14.013 8.577 14.013 7.007C14.013 3.137 10.876 0 7.007 0C3.137 0 0 3.137 0 7.007C0 10.877 3.137 14.014 7.007 14.014C8.582 14.014 10.036 13.494 11.206 12.617ZM7.006 12.012C4.243 12.012 2.002 9.772 2.002 7.007C2.002 4.243 4.242 2.002 7.007 2.002C9.771 2.002 12.011 4.242 12.011 7.007C12.011 9.771 9.771 12.012 7.008 12.012H7.006Z" fill="#85899D"></path></svg></button>
+                            <label for="site-header-search">
+                            </label>
+                            <input class="search-input" type="text" id="header-search" name="q" placeholder="Поиск" value="" size="5" maxlength="50">
+                        </div>
+                        <div class="site-header-lang lang--center">
+                            <div class="lang__item"><a href="" class="lang__link --current">Ru</a></div>
+                            <div class="lang__item"><a href="" class="lang__link">En</a></div>
+                        </div>
+                        <div class="site-header-mobile-burger burger">
+                            <div class="burger-btn">
+                                <span>
+                                    <i></i>
+                                </span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -80,9 +101,44 @@
     </main>
     <footer class="site__footer site-footer">
         <div class="container">
-            <div class="site-footer__copyright">
-                СГУГиТ
+            <div class="site-footer-content">
+                <div class="site-footer-logo">
+                    <picture>
+                        <source srcset="img/header_logo_RU1.png" media="(min-width: 1240px)">
+                        <img class="site-footer__img" src="img/header_logo_RU1.png" alt="logo">
+                    </picture>
+                </div>
+                <div class="site-footer-address">
+                    <div class="site-footer-title">
+                        Адрес
+                    </div>
+                    <div class="site-footer-info">
+                        г. Новосибирск, МВК «Новосибирск Экспоцентр»,<br> ул. Станционная, 104
+                    </div>
+                </div>
+                <div class="site-footer-contacts">
+                    <div class="site-footer-title">
+                        Контакты
+                    </div>
+                    <div class="site-footer-info">
+                        <a href="tel:+73833610109" class="site-footer__link">+7 (383) 361-01-09</a><br>
+                        <a href="mailto:geosib@ssga.ru" class="site-footer__link">geosib@ssga.ru</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="site-footer-copy">
+            <div class="container">
+                ©2024 Сибирский государственный университет геосистем и технологий
             </div>
         </div>
     </footer>
+    <div class="site-up">
+        <div class="site-up__link">
+            <svg id="34531" width="75" height="75" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M33 29L25 21L17 29" stroke="#fff" stroke-width="4"></path>
+            </svg>
+        </div>
+    </div>
 </div>
+<script src="script.js"></script>
