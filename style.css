@@ -452,6 +452,9 @@ p:last-child{
     .site-header__content{
         padding: 13px 0;
     }
+    .site-header__logo img{
+        max-width: 185px;
+    }
 }
 @media(max-width: 900px){
     .site-footer-contacts{
