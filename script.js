@@ -30,7 +30,6 @@ toggleUp.addEventListener("click", () =>{
     });
 });
 window.addEventListener("scroll", ()=>{
-    if(window.innerWidth > 1240){
         if(window.scrollY != 0){
             if(!header.hasAttribute("style")){
                 console.log("1");
@@ -40,7 +39,6 @@ window.addEventListener("scroll", ()=>{
         else{
                 header.removeAttribute("style");
             }
-    }
     if(window.pageYOffset != 0 || !toggleUp.style.display == "none"){
         fadeIn(toggleUp, 250);
     }
