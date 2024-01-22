@@ -82,7 +82,6 @@ function openElem(clickedElem){
     clickedElem = null;
 }
 document.addEventListener("click", function(e){
-    console.log(e.target);
     if(e.target.classList.contains("header-mobile-top")){
         clickedElem = e.target.children[2];
     }
@@ -122,7 +121,6 @@ document.addEventListener("click", function(e){
 window.addEventListener("scroll", ()=>{
         if(window.scrollY != 0){
             if(!header.hasAttribute("style")){
-                console.log("1");
                 header.style.cssText = "box-shadow: 0px 5px 2px #ededed;";
             }
         }
