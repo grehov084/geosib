@@ -112,6 +112,8 @@ p:last-child{
     top: 0;
     background-color: #fff;
     transition: 0.5s;
+    max-height: 170px;
+    overflow: hidden;
 }
 .site-header-mobile{
     display: flex;
