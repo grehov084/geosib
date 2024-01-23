@@ -487,6 +487,9 @@ p:last-child{
     .site-header-top{
         max-width: 650px;
     }
+    .site-header__logo{
+        max-width: 325px;
+    }
 }
 @media(max-width: 1024px){
     .site-main__section{
