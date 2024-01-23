@@ -1,8 +1,9 @@
-let header, toggleUp, body;
+let header, toggleUp, body, headerMobile;
 body = document.querySelector("body");
 header = document.querySelector(".site-header");
 toggleUp = document.querySelector(".site-up");
 burgerElem = document.querySelector(".burger-btn").children[0];
+headerMobile = document.querySelector(".site-header-mobile-content");
 function fadeIn(el, timeout, display){
     if(el.style.opacity == 0){
         el.style.opacity = 0;
@@ -31,9 +32,9 @@ toggleUp.addEventListener("click", () =>{
 });
 function openElem(clickedElem){
     if(clickedElem != null){
-        if(clickedElem.classList.contains("header-mobile-burger")){
+        if(clickedElem.classList.contains("site-header-mobile-burger")){
             if(!headerMobile.hasAttribute("style")){
-                headerMobile.style.transform = "translate(0, 330px)";
+                headerMobile.style.transform = "translate(0, -3px)";
                 body.style.overflow = "hidden";
                 burgerElem.children[0].style.display = "none";
                 burgerElem.style.setProperty("--rotateUp", "45deg");
@@ -100,11 +101,7 @@ document.addEventListener("click", function(e){
     else if(e.target.tagName == "svg" && !e.target.parentNode.classList.contains("site-up__link")){
         clickedElem = e.target.parentNode.parentNode;
     }
-    else if(e.target.classList.contains("header-mobile-burger")){
-        clickedElem = e.target;
-    }
-    else if(e.target.classList.contains("site-menu-title--authors") ||
-            e.target.classList.contains("site-menu-title--readers")){
+    else if(e.target.classList.contains("site-header-mobile-burger")){
         clickedElem = e.target;
     }
     else if(e.target.classList.contains("site-up")){
@@ -114,6 +111,7 @@ document.addEventListener("click", function(e){
         clickedElem = null;
     }
     if(clickedElem != null){
+        console.log(clickedElem);
         openElem(clickedElem);
     }
 });

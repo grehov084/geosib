@@ -113,7 +113,6 @@ p:last-child{
     background-color: #fff;
     transition: 0.5s;
     max-height: 170px;
-    overflow: hidden;
 }
 .site-header-mobile{
     display: flex;
@@ -135,17 +134,19 @@ p:last-child{
     top: 75px;
     width: 100%;
     background-color: #fff;
-    transform: translate(0, -260px);
+    transform: translate(0, -317px);
     z-index: -1;
+    transition: 0.5s;
 }
 .site-header-mobile__link{
     text-decoration: none;
     font-family: "Raleway";
     color: #fff;
     padding: 10px 0;
-    background: #797979;
+    background-color: #797979;
     text-align: center;
     margin: 5px 2px 0 0;
+    transition: 0.5s;
 }
 .site-header-mobile__link:last-child{
     margin-bottom: 5px;
@@ -493,6 +494,9 @@ p:last-child{
     }
 }
 @media screen {
+    .site-header-mobile__link:hover{
+        color: #009fe3;
+    }
     .section-elem__link:hover{
         background-color: #fff;
         color: #000;
