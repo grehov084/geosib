@@ -112,7 +112,7 @@ p:last-child{
     top: 0;
     background-color: #fff;
     transition: 0.5s;
-    max-height: 170px;
+    max-height: 187px;
 }
 .site-header-mobile{
     display: flex;
@@ -123,7 +123,7 @@ p:last-child{
     justify-content: space-between;
     align-items: center;
     height: inherit;
-    padding: 38px 0;
+    padding: 36px 0;
     background-color: #fff;
 }
 .site-header-mobile-content{
