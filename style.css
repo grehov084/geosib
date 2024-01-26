@@ -95,8 +95,10 @@ p:last-child{
     margin-bottom: 0;
 }
 .container{
-    max-width: 1440px;
+    max-width: 1430px;
     margin: 0 auto;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 .container--flex{
     width: 100%;
@@ -114,6 +116,11 @@ p:last-child{
     transition: 0.5s;
     max-height: 187px;
 }
+.site-header-nav{
+    width: 100%;
+    background-color: #797979;
+    height: 50px;
+}
 .site-header-mobile{
     display: flex;
     align-items: center;
@@ -123,7 +130,7 @@ p:last-child{
     justify-content: space-between;
     align-items: center;
     height: inherit;
-    padding: 36px 0;
+    padding: 25px 0 20px 0;
     background-color: #fff;
 }
 .site-header-mobile-content{
@@ -181,6 +188,22 @@ p:last-child{
     background: url("img/slide.jpg");
     background-size: cover;
 }
+.site-header-action{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.site-header__link--action{
+    text-decoration: none;
+    background-color: #e94e1b;
+    border: 2px solid #e94e1b;
+    padding: 13px 97px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+    font-weight: 500;
+    margin-right: 0;
+}
 .site-header__menu{
     height: 50px;
     width: 100%;
@@ -188,7 +211,6 @@ p:last-child{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 10px;
 }
 .site-header-lang{
     display: flex;
@@ -201,10 +223,11 @@ p:last-child{
     align-items: center;
     gap: 10px;
     padding: 6px 0;
+    border-bottom: 1px solid rgba(52, 52, 51, 0.15);
 }
 .menu-header__link{
     text-decoration: none;
-    color: #000;
+    color: #fff;
     transition: 0.5s;
     font-size: 16px;
     font-weight: 500;
@@ -556,9 +579,12 @@ p:last-child{
         color: #000;
         border-color: #fff;
     }
-    .site-header__link:hover,
-    .menu-header__link:hover{
+    .site-header__link:hover{
         color: #009fe3;
+    }
+    .site-header__link--action:hover{
+        background-color: #fff;
+        color: #000;
     }
     .section-elem--blue:hover{
         box-shadow: 0 0 20px #009fe3;
