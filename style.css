@@ -285,7 +285,7 @@ p:last-child{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 .section__elem{
     width: 50%;
@@ -332,6 +332,7 @@ p:last-child{
     transition: 0.5s;
     color: #fff;
     font-weight: bold;
+    font-size: 36px;
 }
 .section-elem__title{
     font-size: 27px;
