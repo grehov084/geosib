@@ -278,7 +278,7 @@ p:last-child{
     width: 100%;
     color: #4b4b4b;
     font-weight: bold;
-    font-size: 36px;
+    font-size: 34px;
 }
 .site-main__info{
     text-align: left;
@@ -506,11 +506,16 @@ p:last-child{
     align-items: center;
 }
 .site-main-info-title{
-    font-size: 36px;
+    font-size: 34px;
 }
 .site-main-info-subtitle, .site-main-info-title{
-    color: #662483;
+    color: #4b4b4b;
     font-weight: bold;
+    font-size: 34px;
+}
+.site-main-info-subtitle--address{
+    font-style: italic;
+    font-size: 28px;
 }
 .timetable-date, .timetable-desc{
     width: max-content;
