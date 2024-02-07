@@ -551,15 +551,15 @@ p:last-child{
 .site-main-info-subtitle--address{
     font-size: 28px;
 }
-.timetable-date, .timetable-desc{
-    width: max-content;
-}
 .timetable-row{
     display: flex;
     margin-bottom: 20px;
 }
 .timetable-desc{
     padding-left: 10px;
+}
+.timetable-date{
+    white-space: nowrap;
 }
 .site-main-info ol{
     margin: 0 0 20px 30px;
@@ -713,6 +713,13 @@ p:last-child{
     }
     .site-footer-group{
         width: max-content;
+    }
+    .timetable-row{
+        flex-direction: column;
+    }
+    .timetable-date{
+        width: 100%;
+        text-align: center;
     }
 }
 @media(max-width: 400px){
