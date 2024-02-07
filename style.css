@@ -187,9 +187,11 @@ p:last-child{
 }
 .site-main__banner{
     width: 100%;
-    height: 660px;
-    background: url("img/banner1.jpg");
-    background-size: cover;
+}
+.site-main__banner img{
+    object-fit: cover;
+    width: 100%;
+    height: max-content;
 }
 .site-header-action{
     width: 100%;
@@ -678,6 +680,12 @@ p:last-child{
     .section-elem--photo, .section-elem--video{
         background-size: cover;
     }
+    .site-main-info-title{
+        font-size: 22px !important;
+    }
+    .site-main__title{
+        font-size: 25px;
+    }
 }
 @media(max-width: 460px){
     .site-main__title{
@@ -693,12 +701,37 @@ p:last-child{
         font-size: 20px;
     }
     .site-header-mobile-top{
-        gap: 8px;
+        gap: 20px;
+    }
+}
+@media(max-width: 440px){
+    .site-footer-logo{
+        text-align: center;
+    }
+    .site-footer__img{
+        max-width: 215px;
+    }
+    .site-footer-group{
+        width: max-content;
     }
 }
 @media(max-width: 400px){
     .site-header__logo img{
         max-width: 50px;
+    }
+}
+@media(max-width: 355px){
+    .site-header-mobile-content{
+        transform: translate(0, -380px);
+    }
+}
+@media(max-width: 320px){
+    .site-footer-soc a{
+        width: 40px;
+        height: 40px;
+    }
+    .search-input{
+        padding: 0 0 0 15px !important;
     }
 }
 @media screen {
